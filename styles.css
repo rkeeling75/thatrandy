@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Almendra', serif;
+    background-color: #e7decf;
+    color: #3b291a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #8a2b06;
+    color: #f9f4e4;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f9f4e4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Two-Column Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 30%;
+    background-color: #f4e8d7;
+    padding: 20px;
+    border-right: 2px solid #8a2b06;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-column {
+    flex: 2;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #f4e8d7;
+    border-radius: 0 10px 10px 0;
+}
+
+.left-column h2,
+.right-column h2 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 2em;
+    color: #8a2b06;
+    margin-bottom: 10px;
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 10px;
+}
+
+.left-column ul li a {
+    color: #3b291a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-column section {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3b291a;
+    color: #f9f4e4;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
